@@ -14,7 +14,7 @@ conn,address=s.accept()
 print(address," client has connected")
 while 1:
     conn,address=s.accept()
-    msg=input("You:>>")
+    msg=Distance("my current location","my current location")
     msg=msg.encode()
     conn.send(msg) 
     in_msg=s.recv(5000) 
